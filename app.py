@@ -38,7 +38,7 @@ def index():
             coll=db['image_data_scrap']
             coll.insert_many(img_data)
             
-            return "something is wrong"
+            return "image loaded"
         except Exception as e:
             logging.info(e)
             return "something is wrong"
