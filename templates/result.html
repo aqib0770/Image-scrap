@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Results</title>
+  </head>
+  <body>
+    <h1>Image Results</h1>
+    {% for image in images %}
+      <img src="data:image/jpg;base64,{{ image }}" alt="Image {{ loop.index }}">
+    {% endfor %}
+  </body>
+</html>
